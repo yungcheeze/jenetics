@@ -46,8 +46,9 @@ dependencies {
 jmh {
 	//jmhVersion = '1.20'
 	//duplicateClassesStrategy = 'include'
-	warmupIterations = 5
-	iterations = 5
+	warmupIterations = 2
+	iterations = 2
+	fork = 1
 	include = ['.*BufferPerf.*']
 }
 
